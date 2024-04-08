@@ -30,4 +30,6 @@ Route::resource('members', App\Http\Controllers\memberController::class);
 Route::get('/customers/new', 'App\Http\Controllers\CustomerController@new');
 Route::post('/customers/create', 'App\Http\Controllers\CustomerController@create')->name('customers.create'); 
 Route::get('/loggedInMember','App\Http\Controllers\memberController@getLoggedInMemberDetails');
-Route::get('/calender/display','App\Http\Controllers\calenderController@display');
+
+Route::get('/calendar/display','App\Http\Controllers\calendarController@display');
+
